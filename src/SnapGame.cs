@@ -32,10 +32,10 @@ namespace CardGames
 		/// Draws the game to the Window.
 		/// </summary>
 		/// <param name="myGame">The details of the game -- mostly top card and scores.</param>
-		private static void DrawGame(Snap myGame)
+		private static void DrawGame (Snap myGame)
 		{
-			SwinGame.ClearScreen(Color.White);
-
+			SwinGame.ClearScreen (Color.White);
+			SwinGame.DrawBitmap ("cardsboard.png", 0, 0);
 			// Draw the top card
 			Card top = myGame.TopCard;
 			if (top != null)
